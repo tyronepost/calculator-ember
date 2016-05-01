@@ -2,9 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
-  tagName: 'button',
-  classNames: ['col-md-3','btn','btn-default'],
-
+  classNames: ['col-md-3'],
   actions: {
     click() {
       console.log('clicking');

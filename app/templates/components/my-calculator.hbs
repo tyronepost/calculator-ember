@@ -16,24 +16,26 @@
       </div>
       <div class="row btn-group btn-group-lg">
           {{number-key num='7' pushNumber=(action 'pushNumber')}}
-          <button class="col-md-3 btn btn-default" {{action 'pushNumber' '8'}}>8</button>
-          <button class="col-md-3 btn btn-default">9</button>
+          {{number-key num='8' pushNumber=(action 'pushNumber')}}
+          {{number-key num='9' pushNumber=(action 'pushNumber')}}
+
           <button class="col-md-3 btn btn-default">X</button>
       </div>
       <div class="row">
         <div class="btn-group btn-group-lg">
-          <button class="btn btn-default">4</button>
-          <button class="btn btn-default">5</button>
-          <button class="btn btn-default">6</button>
-          <button class="btn btn-default">-</button>
+          {{number-key num='4' pushNumber=(action 'pushNumber')}}
+          {{number-key num='5' pushNumber=(action 'pushNumber')}}
+          {{number-key num='6' pushNumber=(action 'pushNumber')}}
+
+         <button class="btn btn-default">-</button>
       </div>
       </div>
       <div class="row">
         <div class="btn-group btn-group-lg">
-          <button class="btn btn-default">1</button>
-          <button class="btn btn-default">2</button>
-          <button class="btn btn-default">3</button>
-          <button class="btn btn-default">+</button>
+          {{number-key num='1' pushNumber=(action 'pushNumber')}}
+          {{number-key num='2' pushNumber=(action 'pushNumber')}}
+          {{number-key num='3' pushNumber=(action 'pushNumber')}}
+          {{number-key num='+' pushNumber=(action 'pushOperation')}}
         </div>
       </div>
     </div>
