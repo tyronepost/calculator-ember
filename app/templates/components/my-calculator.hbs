@@ -15,7 +15,7 @@
           <button class="col-md-3 btn btn-default">/</button>
       </div>
       <div class="row btn-group btn-group-lg">
-          <button class="col-md-3 btn btn-default">7</button>
+          {{number-key num='7' pushNumber=(action 'pushNumber')}}
           <button class="col-md-3 btn btn-default" {{action 'pushNumber' '8'}}>8</button>
           <button class="col-md-3 btn btn-default">9</button>
           <button class="col-md-3 btn btn-default">X</button>
