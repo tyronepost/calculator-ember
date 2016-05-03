@@ -9,25 +9,23 @@
         <h3>{{value}}</h3>
       </div>
       <div class="row btn-group btn-group-lg">
-          <button class="col-md-3 btn btn-default">AC</button>
-          <button class="col-md-3 btn btn-default">+/-</button>
-          <button class="col-md-3 btn btn-default">%</button>
-          <button class="col-md-3 btn btn-default">/</button>
+          {{number-key num='AC' pushNumber=(action 'pushOperation')}}
+          {{number-key num='+/-' pushNumber=(action 'pushOperation')}}
+          {{number-key num='%' pushNumber=(action 'pushOperation')}}
+          {{number-key num='/' pushNumber=(action 'pushOperation')}}
       </div>
       <div class="row btn-group btn-group-lg">
           {{number-key num='7' pushNumber=(action 'pushNumber')}}
           {{number-key num='8' pushNumber=(action 'pushNumber')}}
           {{number-key num='9' pushNumber=(action 'pushNumber')}}
-
-          <button class="col-md-3 btn btn-default">X</button>
+          {{number-key num='X' pushNumber=(action 'pushOperation')}}
       </div>
       <div class="row">
         <div class="btn-group btn-group-lg">
           {{number-key num='4' pushNumber=(action 'pushNumber')}}
           {{number-key num='5' pushNumber=(action 'pushNumber')}}
           {{number-key num='6' pushNumber=(action 'pushNumber')}}
-
-         <button class="btn btn-default">-</button>
+          {{number-key num='-' pushNumber=(action 'pushOperation')}}
       </div>
       </div>
       <div class="row">
